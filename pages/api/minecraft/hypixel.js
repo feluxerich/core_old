@@ -1,4 +1,4 @@
-async function handler(req, res) {
+async function hypixel(req, res) {
     const hypixelAPIKey = process.env.HYPIXEL_API_KEY;
 
     const name = req.query.name;
@@ -32,4 +32,4 @@ async function handler(req, res) {
     }
 }
 
-export default handler;
+export default hypixel;

@@ -11,7 +11,7 @@ function Hypixel() {
     const [value, setValue] = useState("")
     const [data, setData] = useState({})
 
-    var handleChange = (e) => {
+    const handleChange = (e) => {
         setValue(e.currentTarget.value)
     }
 
