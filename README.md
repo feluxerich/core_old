@@ -4,7 +4,7 @@ This is the core project (because I have not found any better names) there will 
 
 ## Usage
 
-ˋˋˋˋˋˋ```bash
+```bash
 npm run dev # for development server
 
 npm run build # for building the project
