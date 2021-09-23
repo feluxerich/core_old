@@ -13,7 +13,7 @@ function Navbar({ loggedIn }) {
                 </a>
                 <a href="/10k/" className="ml-3">
                     <button className="bg-gray-800 hover:bg-gray-700 px-3 py-1 rounded-md">
-                        Klasse 10k Beta
+                        Klasse 10k PreAlpha
                     </button>
                 </a>
             </div>
