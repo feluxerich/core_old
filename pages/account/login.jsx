@@ -1,5 +1,6 @@
-import { Router, useRouter } from "next/router"
+import { useRouter } from "next/router"
 import { useState } from "react"
+import jscookie from "jscookie"
 
 function Login() {
     const [username, setUsername] = useState("")
@@ -26,7 +27,11 @@ function Login() {
         });
 
         if (resp.status === 200) {
-            sessionStorage.setItem("jwt", (await resp.json()).token)
+            jscookie.set({
+                name: "jwt",
+                value: (await resp.json()).token,
+                exdays: 1
+            })
             router.push("/")
         }
     }
