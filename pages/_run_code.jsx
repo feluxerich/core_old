@@ -20,7 +20,17 @@ function RunCode() {
             <label>
                 <input type="text" placeholder="Language" value={language} onChange={(e) => setLanguage(e.currentTarget.value)} className="bg-gray-900 border-2 border-gray-800 p-3" />
             </label>
-            <textarea value={source} onChange={(e) => setSource(e.currentTarget.value)} className="resize-none bg-gray-900 border-2 border-gray-800 p-3" />
+            <code className="w-1/2 my-5">
+                <div
+                    contentEditable
+                    value={source}
+                    onChange={(e) => setSource(e.currentTarget.value)} 
+                    className="resize-none bg-gray-900 border-2 border-gray-800 p-3 outline-none"
+                    style={{
+                        wordWrap: "break-word"
+                    }}
+                />
+            </code>
             <button type="submit" className="border-2 border-white p-3 rounded-md" onClick={makeRequest}>Run</button>
 
             <span>
