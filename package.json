@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@octokit/core": "^3.5.1",
     "bcrypt": "^5.0.1",
     "codemirror": "^5.63.0",
     "cookie": "^0.4.1",
