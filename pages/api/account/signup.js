@@ -13,7 +13,7 @@ async function signup(req, res) {
         return
     }
 
-    if ((await User.find({ username: req.username })).length > 0) {
+    if (await User.findOne({ username: req.username })) {
         res.status(302).json({
             message: "User already exists"
         })

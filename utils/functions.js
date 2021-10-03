@@ -9,8 +9,8 @@ export async function checkToken(token) {
     await connect()
 
     var decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
-    var user = await User.find({ username: decoded.username })
-    if (user.length == 0 || decoded.password_hash !== user[0].password_hash) {
+    var user = await User.findOne({ username: decoded.username })
+    if (user.length == 0 || decoded.password_hash !== user.password_hash) {
         return false
     }
     return user
