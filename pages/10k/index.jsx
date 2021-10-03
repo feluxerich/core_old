@@ -6,9 +6,11 @@ function Index() {
             <span className="text-6xl font-bold">
               Klasse 10k
             </span>
-            <span className="text-xl mt-5">
-              @10k.ist.abgehoben
-            </span>
+            <a href="">
+              <span className="text-xl mt-6">
+                @10k.ist.abgehoben
+              </span>
+            </a>
           </div>
       </section>
       <section>
@@ -17,4 +19,4 @@ function Index() {
   )
 }
 
-export default Index;
+export default Index
