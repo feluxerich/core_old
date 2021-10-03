@@ -1,7 +1,9 @@
-function Navbar({ loggedIn }) {
+import { useEffect } from "react";
+
+function Navbar() {    
     return (
-        <nav className="bg-gray-800 h-14 flex flex-row items-center text-white p-6">
-            <div className="flex flex-row">
+        <nav className="bg-gray-800 h-14 flex flex-row items-center text-white">
+            <div className="absolute left-6 flex flex-row text-right">
                 <p className="text-xl">core</p>
                 <a href="/" className="ml-6">
                     <button className="bg-gray-900 px-3 py-1 rounded-md">Home</button>
