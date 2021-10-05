@@ -31,7 +31,7 @@ jobs:
         run: npm run lint
 
   docker:
-    needs: [lint]
+    # needs: [lint]
     runs-on: ubuntu-latest
 
     steps:
@@ -61,7 +61,7 @@ jobs:
       - name: Build
         uses: docker/build-push-action@v2
         with:
-          context: app
+          context: /app
           file: /app/Dockerfile
           platforms: ${{ env.DOCKER_PLATFORMS }}
           push: true
