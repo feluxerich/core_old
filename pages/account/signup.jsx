@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { Link } from "next/link";
+import Link from "next/link";
 
 function SignUp() {
   const [username, setUsername] = useState("");

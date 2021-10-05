@@ -1,5 +1,5 @@
 import { baseUrl } from "@utils/functions";
-import { Image } from "next/image";
+import Image from "next/image";
 
 function GitHub({ GITHUB_USER_DATA, GITHUB_USER_REPOS }) {
   return (

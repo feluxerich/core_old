@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import jscookie from "jscookie";
-import { Link } from "next/link";
+import Link from "next/link";
 
 function Navbar() {
   return (
