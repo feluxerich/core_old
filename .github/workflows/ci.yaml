@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - "main"
+    tags:
+      - "v*"
 
 env:
   NODE_VERSION: 14.x
@@ -42,6 +44,9 @@ jobs:
           tag-edge: true
           images: |
             ghcr.io/${{ env.IMAGE_NAME }}
+          tag-semver: |
+            {{version}}
+            {{major}}.{{minor}}
       
       - uses: docker/setup-qemu-action@v1
       - uses: docker/setup-buildx-action@v1
@@ -60,3 +65,5 @@ jobs:
           file: app/Dockerfile
           platforms: ${{ env.DOCKER_PLATFORMS }}
           push: true
+          tags: ${{ steps.docker_meta.outputs.tags }}
+          labels: ${{ steps.docker_meta.outputs.labels }}
