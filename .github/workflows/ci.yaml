@@ -61,7 +61,6 @@ jobs:
       - name: Build
         uses: docker/build-push-action@v2
         with:
-          context: /app
           file: /app/Dockerfile
           platforms: ${{ env.DOCKER_PLATFORMS }}
           push: true
