@@ -1,11 +1,12 @@
 import { baseUrl } from "@utils/functions";
+import { Image } from "next/image";
 
 function GitHub({ GITHUB_USER_DATA, GITHUB_USER_REPOS }) {
   return (
     <div className="flex flex-col items-center pt-28">
       <a href={GITHUB_USER_DATA.url}>
         <div className="flex flex-col max-w-md items-center p-7 rounded-lg">
-          <img
+          <Image
             src={GITHUB_USER_DATA.avatar}
             alt="user_avatar"
             className="rounded-full w-24"
@@ -21,7 +22,7 @@ function GitHub({ GITHUB_USER_DATA, GITHUB_USER_REPOS }) {
         <ul>
           {GITHUB_USER_REPOS.map((element) => {
             return (
-              <li>
+              <li key={element.name}>
                 <a href={element.url}>
                   <button className="w-full flex flex-row">
                     <span className="left-6">{element.name}</span>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Image } from "next/image";
 
 function Hypixel() {
   var sendRequest = async () => {
@@ -39,7 +40,7 @@ function Hypixel() {
           className="bg-gray-700 h-full rounded-lg mr-9"
           style={{ aspectRatio: "1/1" }}
         >
-          <img
+          <Image
             className="h-full w-full rounded-lg"
             src={`https://mc-heads.net/avatar/${data?.id}`}
             alt="profile-head"
