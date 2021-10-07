@@ -6,6 +6,7 @@ on:
       - "main"
     tags:
       - "v*"
+  pull_request:
 
 env:
   NODE_VERSION: 14.x
@@ -31,10 +32,13 @@ jobs:
         run: npm run lint
 
   docker:
-    needs: [lint]
+#    if: ${{ github.event_name != 'pull_request' }}
+#    needs: [lint]
     runs-on: ubuntu-latest
 
     steps:
+      - run: echo ${{github.ref}}
+
       - uses: actions/checkout@v2
 
       - name: Docker meta
