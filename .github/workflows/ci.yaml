@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - "main"
+      - "development"
     tags:
       - "v*"
   pull_request:
@@ -32,13 +33,11 @@ jobs:
         run: npm run lint
 
   docker:
-#    if: ${{ github.event_name != 'pull_request' }}
-#    needs: [lint]
+    if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+    needs: [lint]
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo ${{github.ref}}
-
       - uses: actions/checkout@v2
 
       - name: Docker meta
