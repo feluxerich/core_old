@@ -7,6 +7,7 @@ on:
 
 env:
   IMAGE_NAME: feluxerich/core
+  IMAGE_TAG: latest
 
 jobs:
   lint:
@@ -24,6 +25,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd core-project
-            dc down
-            docker image remove ghcr.io/${{ env.IMAGE_NAME }}
-            dc up -d
+            docker-compose down
+            docker image remove ghcr.io/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+            docker-compose up -d
