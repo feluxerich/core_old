@@ -1,4 +1,4 @@
-name: Core Project CI
+name: Core Project CD
 
 on:
   push:
@@ -10,7 +10,7 @@ env:
   IMAGE_TAG: latest
 
 jobs:
-  lint:
+  deploy:
     runs-on: ubuntu-latest
     
     steps:
