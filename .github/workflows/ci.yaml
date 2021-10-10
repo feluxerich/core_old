@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - "main"
-      - "development"
     tags:
       - "v*"
   pull_request:
@@ -33,7 +32,7 @@ jobs:
         run: npm run lint
 
   docker:
-    if: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+    if: ${{ github.event_name != 'pull_request' }}
     needs: [lint]
     runs-on: ubuntu-latest
 

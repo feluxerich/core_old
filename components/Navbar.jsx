@@ -13,16 +13,6 @@ function Navbar() {
             Hypixel
           </button>
         </Link>
-        <Link href="/10k/" passHref className="ml-3">
-          <button className="bg-gray-800 hover:bg-gray-700 px-3 py-1 rounded-md">
-            Klasse 10k PreAlpha
-          </button>
-        </Link>
-        <Link href="/github/" passHref className="ml-3">
-          <button className="bg-gray-800 hover:bg-gray-700 px-3 py-1 rounded-md">
-            GitHub
-          </button>
-        </Link>
       </div>
     </nav>
   );
