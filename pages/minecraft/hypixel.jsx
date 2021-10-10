@@ -44,6 +44,8 @@ function Hypixel() {
             className="h-full w-full rounded-lg"
             src={`https://mc-heads.net/avatar/${data?.id}`}
             alt="profile-head"
+            height={200}
+            width={200}
           />
         </div>
         <div className="w-full h-full flex flex-col text-white font-bold">
