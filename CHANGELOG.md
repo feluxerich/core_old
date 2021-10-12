@@ -1,6 +1,4 @@
-# Added Next Images
+# Fixed Display Bug at Login and Signup Form
 
-- Hypixel Next Images
-- Made Navbar Links to a new Component
-- Updated README
-- Removed `Connect Github`-Button on Index Page
+- Margin Top not working at Next Link
+- Removed CD Workflow

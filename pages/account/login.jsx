@@ -65,13 +65,11 @@ function Login() {
       </label>
       <button
         type="submit"
-        className="mt-6 rounded-xl pl-6 pr-6 pt-1 pb-1 font-bold border-2 border-white bg-transparent hover:bg-gray-500 hover:bg-opacity-30"
+        className="mt-6 mb-4 rounded-xl pl-6 pr-6 pt-1 pb-1 font-bold border-2 border-white bg-transparent hover:bg-gray-500 hover:bg-opacity-30"
       >
         Log In
       </button>
-      <Link href="/account/signup" className="mt-4">
-        Sign Up
-      </Link>
+      <Link href="/account/signup">Sign Up</Link>
     </form>
   );
 }
