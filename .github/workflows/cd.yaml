@@ -1,9 +1,6 @@
 name: Core Project CD
 
-on:
-  registry_package:
-    types: 
-      - published
+on: registry_package
 
 env:
   IMAGE_NAME: feluxerich/core
