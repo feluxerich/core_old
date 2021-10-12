@@ -1,7 +1,9 @@
 name: Core Project CD
 
 on:
-  release:
+  schedule:
+    - cron: '0 0 */1 * *'
+  
 
 env:
   IMAGE_NAME: feluxerich/core
@@ -10,7 +12,7 @@ env:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v2
 
