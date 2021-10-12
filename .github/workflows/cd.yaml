@@ -3,7 +3,7 @@ name: Core Project CD
 on:
   workflow_run:
     workflows:
-      - ci
+      - "ci"
     types:
       - completed
 
