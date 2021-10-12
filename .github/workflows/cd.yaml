@@ -1,11 +1,9 @@
 name: Core Project CD
 
 on:
-  workflow_run:
-    workflows:
-      - "ci"
-    types:
-      - completed
+  registry_package:
+    types: 
+      - published
 
 env:
   IMAGE_NAME: feluxerich/core
