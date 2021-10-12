@@ -5,15 +5,16 @@ This is the core project (because I have not found any better names) there will 
 ## Usage
 
 ```bash
-npm run dev # for development server
+npm run dev     # for development server
 
-npm run build # for building the project
-npm run start # for production server
+npm run lint    # for linting your code
+
+npm run build   # for building the project
+npm run start   # for production server
 ```
 
 ## Feature Preview
 
 - HyPixel API Fetcher
-- Beta of new class Website
 - Login and Registration Form
 - Coming Soon...
