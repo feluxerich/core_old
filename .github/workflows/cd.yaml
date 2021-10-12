@@ -1,9 +1,6 @@
 name: Core Project CD
 
 on:
-  push:
-    tags:
-      - "v*"
   workflow_run:
     workflows:
       - ci
