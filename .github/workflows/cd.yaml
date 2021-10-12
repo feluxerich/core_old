@@ -1,6 +1,7 @@
 name: Core Project CD
 
-on: registry_package
+on:
+  release:
 
 env:
   IMAGE_NAME: feluxerich/core
