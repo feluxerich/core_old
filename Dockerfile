@@ -1,8 +1,9 @@
-FROM node:14-alpine
+FROM node:alpine
 
 WORKDIR /app
 
 COPY . /app/
+COPY next.config.js /app/
 
 EXPOSE 3000
 
