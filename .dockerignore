@@ -4,3 +4,7 @@ node_modules
 .next
 .github
 package-lock.json
+CHANGELOG.md
+LICENSE
+.gitignore
+.github

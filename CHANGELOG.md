@@ -1,3 +1,5 @@
-# Added License
+# Gulp Sass Compilation
 
-- Added MIT License
+- Automated Gulp Sass Compilation
+  -> Added `gulpfile.js`
+- Added a few files to `.dockerignore`

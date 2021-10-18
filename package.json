@@ -9,6 +9,8 @@
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cookie": "^0.4.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
     "jscookie": "^1.1.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.5",
@@ -23,6 +25,7 @@
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
     "postcss": "^8.3.5",
+    "sass": "^1.43.2",
     "tailwindcss": "^2.2.4"
   }
 }
