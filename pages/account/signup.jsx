@@ -37,7 +37,7 @@ function SignUp() {
 
   return (
     <form
-      className="bg-gradient-to-r from-blue-400 to-green-400 text-white font-bold max-w-sm w-full rounded-xl flex flex-col items-center mr-auto ml-auto mt-60 p-7"
+      className="bg-gradient-to-r from-blue-400 to-green-400 text-white font-bold max-w-sm w-full rounded-xl flex flex-col items-center mr-auto ml-auto p-7"
       onSubmit={onSubmit}
     >
       <p className="text-3xl mb-5">Sign Up</p>

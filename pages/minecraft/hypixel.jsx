@@ -17,7 +17,7 @@ function Hypixel() {
   };
 
   return (
-    <div className="container ml-auto mr-auto flex flex-col justify-center items-center mt-40">
+    <div className="container ml-auto mr-auto flex flex-col justify-center items-center">
       <div className="flex items-center border-b-2 border-gray-500 py-2 w-full max-w-sm">
         <input
           className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
