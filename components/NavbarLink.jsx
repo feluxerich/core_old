@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-function NavbarLink({ href, title }) {
+function NavbarLink({ href, icon }) {
   return (
     <Link href={href} passHref>
-      <button className="mx-1.5 bg-gray-800 hover:bg-gray-700 px-3 py-1 rounded-md">
-        {title}
+      <button className="m-1.5 hover:bg-gray-700 dark:hover:bg-gray-400 p-2 rounded-full flex items-center w-min">
+        {icon}
       </button>
     </Link>
   );

@@ -1,6 +1,22 @@
-body,
+* {
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url("../public/background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 0;
+  // filter: blur(10px);
+}
+
 .darker {
-  background-color: #11101d;
+  background-color: #1d2124;
 }
 
 .x-separator {

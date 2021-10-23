@@ -17,10 +17,10 @@ function Hypixel() {
   };
 
   return (
-    <div className="container ml-auto mr-auto flex flex-col justify-center items-center">
-      <div className="flex items-center border-b-2 border-gray-500 py-2 w-full max-w-sm">
+    <div className="container flex flex-col items-center ">
+      <div className="flex items-center w-full max-w-sm py-2 border-b-2 border-gray-500">
         <input
-          className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
+          className="w-full px-2 py-1 mr-3 leading-tight text-white bg-transparent border-none appearance-none focus:outline-none"
           type="text"
           placeholder="Username"
           aria-label="Username"
@@ -28,29 +28,30 @@ function Hypixel() {
           onChange={handleChange}
         />
         <button
-          className="flex-shrink-0 bg-transparent hover:bg-gray-600 border-gray-500 hover:border-gray-600 text-sm border-2 text-gray-500 hover:text-white py-1 px-2 rounded"
+          className="flex-shrink-0 px-2 py-1 text-sm text-gray-500 bg-transparent border-2 border-gray-500 rounded hover:bg-gray-600 hover:border-gray-600 hover:text-white"
           type="submit"
           onClick={sendRequest}
         >
           Lookup
         </button>
       </div>
-      <div className="bg-gray-800 rounded-lg max-w-xl w-full h-64 p-7 flex flex-row mt-6">
+      <div className="flex flex-row w-full h-64 max-w-xl mt-6 bg-gray-800 rounded-lg p-7">
         <div
-          className="bg-gray-700 h-full rounded-lg mr-9"
+          className="h-full bg-gray-700 rounded-lg mr-9"
           style={{ aspectRatio: "1/1" }}
         >
           <Image
-            className="h-full w-full rounded-lg"
+            className="w-full h-full rounded-lg"
             src={`https://mc-heads.net/avatar/${data?.id}`}
             alt="profile-head"
             height={200}
             width={200}
+            style={{ aspectRatio: "1/1" }}
           />
         </div>
-        <div className="w-full h-full flex flex-col text-white font-bold">
-          <p className="text-2xl mb-4">{data?.name}</p>
-          <span className="text-sm flex items-center">
+        <div className="flex flex-col w-full h-full font-bold text-white">
+          <p className="mb-4 text-2xl">{data?.name}</p>
+          <span className="flex items-center text-sm">
             Status:{" "}
             <div
               className={`h-3 w-3 rounded-full ml-2 ${

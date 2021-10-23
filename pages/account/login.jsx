@@ -39,33 +39,33 @@ function Login() {
 
   return (
     <form
-      className="bg-gradient-to-r from-blue-400 to-green-400 text-white font-bold max-w-sm w-full rounded-xl flex flex-col items-center mr-auto ml-auto p-7"
+      className="flex flex-col items-center w-full max-w-sm font-bold text-white bg-gradient-to-r from-blue-400 to-green-400 rounded-xl p-7"
       onSubmit={handleSubmit}
     >
-      <p className="text-3xl mb-5">Log In</p>
+      <p className="mb-5 text-3xl">Log In</p>
       <label htmlFor="username" className="flex flex-col">
         Username:
         <input
           type="text"
           id="username"
-          className="bg-transparent border-b-2 border-white text-white focus:outline-none"
+          className="text-white bg-transparent border-b-2 border-white focus:outline-none"
           value={username}
           onChange={handleUsernameChange}
         />
       </label>
-      <label htmlFor="password" className="mt-4 flex flex-col">
+      <label htmlFor="password" className="flex flex-col mt-4">
         Password:
         <input
           type="password"
           id="password"
-          className="bg-transparent border-b-2 border-white text-white focus:outline-none"
+          className="text-white bg-transparent border-b-2 border-white focus:outline-none"
           value={password}
           onChange={handlePasswordChange}
         />
       </label>
       <button
         type="submit"
-        className="mt-6 mb-4 rounded-xl pl-6 pr-6 pt-1 pb-1 font-bold border-2 border-white bg-transparent hover:bg-gray-500 hover:bg-opacity-30"
+        className="pt-1 pb-1 pl-6 pr-6 mt-6 mb-4 font-bold bg-transparent border-2 border-white rounded-xl hover:bg-gray-500 hover:bg-opacity-30"
       >
         Log In
       </button>
