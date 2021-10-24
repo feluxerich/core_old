@@ -1,5 +1,3 @@
-# Gulp Sass Compilation
+# **[v1.2.16]**
 
-- Automated Gulp Sass Compilation
-  -> Added `gulpfile.js`
-- Added a few files to `.dockerignore`
+Just some testing with the next.config.js
