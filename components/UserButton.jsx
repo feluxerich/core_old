@@ -12,10 +12,8 @@ function UserButton() {
 
   useEffect(() => {
     if (jscookie.get("jwt")) {
-      console.log(1);
       setLoggedIn(true);
     } else {
-      console.log(2);
       setLoggedIn(false);
     }
   }, []);
