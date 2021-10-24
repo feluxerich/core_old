@@ -30,7 +30,7 @@ function ThemeSwitch({ size }) {
   }, []);
 
   return (
-    <button onClick={switchTheme} className="mt-auto">
+    <button onClick={switchTheme} className="mt-auto" title="Switch Theme">
       {darkModeEnabled ? (
         <IoSunnyOutline size={size} />
       ) : (

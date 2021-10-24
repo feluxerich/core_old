@@ -20,7 +20,7 @@ function Hypixel() {
     <div className="container flex flex-col items-center ">
       <div className="flex items-center w-full max-w-sm py-2 border-b-2 border-gray-500">
         <input
-          className="w-full px-2 py-1 mr-3 leading-tight text-white bg-transparent border-none appearance-none focus:outline-none"
+          className="w-full px-2 py-1 mr-3 leading-tight text-gray-900 bg-transparent border-none appearance-none dark:text-white focus:outline-none"
           type="text"
           placeholder="Username"
           aria-label="Username"
@@ -35,9 +35,9 @@ function Hypixel() {
           Lookup
         </button>
       </div>
-      <div className="flex flex-row w-full h-64 max-w-xl mt-6 bg-gray-800 rounded-lg p-7">
+      <div className="flex flex-row w-full h-64 max-w-xl mt-6 bg-gray-300 rounded-lg dark:bg-gray-900 p-7">
         <div
-          className="h-full bg-gray-700 rounded-lg mr-9"
+          className="h-full bg-gray-400 rounded-lg dark:bg-gray-700 mr-9"
           style={{ aspectRatio: "1/1" }}
         >
           <Image
@@ -49,7 +49,7 @@ function Hypixel() {
             style={{ aspectRatio: "1/1" }}
           />
         </div>
-        <div className="flex flex-col w-full h-full font-bold text-white">
+        <div className="flex flex-col w-full h-full font-bold text-gray-900 dark:text-white">
           <p className="mb-4 text-2xl">{data?.name}</p>
           <span className="flex items-center text-sm">
             Status:{" "}

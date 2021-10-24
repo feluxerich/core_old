@@ -1,24 +1,15 @@
-* {
-  box-sizing: border-box;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .x-separator {
+    width: 2px;
+    background-color: #cbcfcb;
+  }
 
-.background {
-  background-image: url("../public/background.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  z-index: -1;
-  position: absolute;
-  overflow: hidden;
-  left: 0px;
-  top: 0;
-}
-
-.darker {
-  background-color: #1d2124;
-}
-
-.x-separator {
-  width: 2px;
-  background-color: #cbcfcb;
+  .background {
+    background-image: url("../public/background.jpg");
+    background-position: center;
+    background-size: cover;
+  }
 }

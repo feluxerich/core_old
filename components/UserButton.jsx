@@ -21,12 +21,12 @@ function UserButton() {
   }, []);
 
   return loggedIn ? (
-    <button className="m-3" onClick={logOut}>
+    <button className="m-3" onClick={logOut} title="Log Out">
       <IoLogOutOutline size="24px" />
     </button>
   ) : (
     <Link href="/account/login" passHref>
-      <button className="m-3">
+      <button className="m-3" title="Log In">
         <IoLogInOutline size="24px" />
       </button>
     </Link>
