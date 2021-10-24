@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components {
+@layer utilities {
   .x-separator {
     width: 2px;
     background-color: #cbcfcb;

@@ -14,6 +14,7 @@ function Navbar() {
       <NavbarLink
         href="/lol_builds"
         icon={<IoAlbums size="24px" title="Fun League Builds" />}
+        disabled={true}
       />
       <NavbarLink
         href="https://github.com/feluxerich/core"
