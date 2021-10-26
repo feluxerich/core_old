@@ -4,7 +4,7 @@
 
 const nextConfig = {
     images: {
-        domains: ['mc-heads.net'],
+        domains: ['mc-heads.net', "m2vi.me"],
     }
 }
 

@@ -32,7 +32,7 @@ function ThemeSwitch({ size }) {
   return (
     <button
       onClick={switchTheme}
-      className="mt-auto m-1.5"
+      className="mt-auto m-1.5 grid place-items-center theme-switch"
       title="Switch Theme"
     >
       {darkModeEnabled ? (

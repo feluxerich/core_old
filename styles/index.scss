@@ -1,15 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+nav {
+  transition: width 300ms ease-in-out;
 
-@layer utilities {
-  .x-separator {
-    width: 2px;
-    background-color: #cbcfcb;
+  button:not(.theme-switch) {
+    width: 100%;
+
+    svg {
+      min-width: 24px;
+      width: 24px;
+      margin-left: calc((48px - 24px) / 2);
+    }
+
+    .title {
+      margin-left: 1rem;
+      opacity: 0;
+      transition: opacity 100m ease-in-out;
+    }
   }
-  .background {
-    background-image: url("../public/background.jpg");
-    background-position: center;
-    background-size: cover;
+}
+
+nav:hover {
+  button {
+    width: 100%;
+
+    svg {
+      min-width: 24px;
+      width: fit-content;
+    }
+
+    .title {
+      opacity: 1;
+    }
   }
+}
+
+.x-separator {
+  width: 2px;
+  background-color: #cbcfcb;
+}
+.background {
+  background-image: url("../public/background.jpg");
+  background-position: center;
+  background-size: cover;
 }

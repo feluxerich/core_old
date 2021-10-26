@@ -1,5 +1,10 @@
 # Changelog
 
+## **[v1.2.18]**
+
+- Made Tailwind TrueGray to Tailwind BlueGray
+- Animated Sidebar/Navbar
+
 ## **[v1.2.17]**
 
 - Made Tailwind BlueGray instead of TrueGray
